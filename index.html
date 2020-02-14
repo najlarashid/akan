@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <title>Akan</title>
+</head>
+<body>
+    <div class="container-fluid min-vh-100 landing-page">
+        <div class="navbar fixed-top bg-dark justify-content-center">
+            <a href="#" class="nav-item btn bg-light m-1">TOP</a>
+            <a href="#akanform" class="nav-item btn bg-light m-1">AKAN FORM</a>
+        </div>
+    </div>
+<div class="container min-vh-100 akan-form-container" id="akanform">
+    <form action="" onsubmit="return false" class="akan-form border p-2">
+
+        <div class="form-group">
+            <h1>Data Capture Form</h1>
+
+            <div class="display-screen">
+                <h3 id="screen" class="border p-2 bg-primary display">Please fill the form below</h3>
+            </div>
+            <label for="first">Enter First Name</label>
+            <input type="text" class="form-control" id="first" placeholder="Enter Your First Name">
+        </div>
+
+        <div class="form-group">
+            <label for="last">Enter Last Name</label>
+            <input type="text" class="form-control" id="last" placeholder="Enter Your Last Name">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Enter Date Of Birth</label>
+            <input type="date" name="" id="date" class="form-control">
+        </div>
+        
+        <div class="form-group radio">
+            <label for="male">
+                <input type="radio" name="gender" id="gender" value="M" checked required>Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" id="gender" required> Female
+            </label>
+        </div>
+
+        <div class="form-group" id="form-functions">
+            <input type="submit" onclick="getName()" value="Submit" class="btn btn-success form-control">
+            <input type="reset" value="Reset" class="btn btn-danger form-control">
+        </div>
+    </form>
+</div>
+</body>
+</html>
