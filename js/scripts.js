@@ -1,5 +1,13 @@
-function getName(){
+function getName(){ 
     ///alert("i was clicked");
+    var gender = document.getElementById("gender").checked;
+    var first = document.getElementById("first").value;
+    //alert(first);
+    var date = document.getElementById("date").value;
+
+    if(date && first && gender !== null){
+        //alert("not Null");
+            ///alert("i was clicked");
     var gender = document.getElementById("gender").checked;
     var first = document.getElementById("first").value;
     //alert(first);
@@ -13,7 +21,7 @@ function getName(){
     if(gender == true){
         var names = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
         var name = names[date];
-        alert(name);
+        //alert(name);
     }else if(gender == false){
     
         var names = ["Akosua", "Adwoa", "Abenaa", "Akua", "yaa", "Afua", "Ama"];
@@ -21,4 +29,10 @@ function getName(){
 
     }
 screen.innerHTML=("Hello " +first + ", your Akan Name is " + name + "."); 
+
+
+    }else {
+        alert("Error! You Must fill All The Required Fields In The Form To Proceed")
+    }
+
 }
