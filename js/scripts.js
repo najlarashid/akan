@@ -6,10 +6,6 @@ function getName(){
     var date = document.getElementById("date").value;
 
     if(date && first && gender !== null){
-        //alert("not Null");
-            ///alert("i was clicked");
-    var gender = document.getElementById("gender").checked;
-    var first = document.getElementById("first").value;
     //alert(first);
     var date = document.getElementById("date").value;
     var screen = document.getElementById("screen");
